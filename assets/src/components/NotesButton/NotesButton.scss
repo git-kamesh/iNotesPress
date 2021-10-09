@@ -1,0 +1,43 @@
+.dfn-parent {
+    position: relative;
+}
+
+.dfn-parent:hover .dfn-notebtn {
+    opacity: 1;
+}
+
+.dfn-notebtn {
+    border: 2px solid #0073AA;
+    color: #0073AA;
+    width: 16px;
+    height: 16px;
+    background-color: #E5E5E5;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.dfn-notebtn.grid {
+    right: 15px;
+    top: 15px;
+}
+
+.dfn-notebtn.static {
+    opacity: 1;
+}
+
+.dfn-notebtn:hover {
+    background-color: #0087c7;
+    color: #ffffff;
+}

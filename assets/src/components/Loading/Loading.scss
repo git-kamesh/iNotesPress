@@ -1,0 +1,46 @@
+.df_load {
+    border-radius: 50%;
+    box-shadow: 0 1em 0 -.2em currentcolor;
+    position: relative;
+    animation: df_load 0.8s ease-in-out alternate infinite;
+    animation-delay: 0.32s;
+    top: -1em;
+    width: 15px;
+    height: 15px;
+    color: #0073aa;
+}
+
+.df_load.white {
+    color: #ffffff;
+}
+
+.df_load:after,
+.df_load:before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+    animation: inherit;
+}
+
+.df_load:before {
+    left: -2em;
+    animation-delay: 0.48s;
+}
+
+.df_load:after {
+    right: -2em;
+    animation-delay: 0.16s;
+}
+
+@keyframes df_load {
+    0% {
+        box-shadow: 0 3em 0 -.2em currentcolor;
+    }
+
+    100% {
+        box-shadow: 0 1em 0 -.2em currentcolor;
+    }
+}

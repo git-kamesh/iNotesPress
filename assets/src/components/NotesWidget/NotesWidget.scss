@@ -1,0 +1,217 @@
+.dfn-notes-widgte {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 450px;
+    height: 90%;
+    max-height: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dfn-notes-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dfn-notes-body::-webkit-scrollbar-thumb {
+    background-color: #9f9a9a;
+}
+
+.dfn-notes-body {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.dfn-notes-body .content {
+    padding: 10px 10px 0px 10px;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.dfn-notes-body.consent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dfn-notes-body.consent .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dfn-notes-body.consent .dbn-title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 5px 0px;
+}
+
+.dfn-notes-body.consent .dbn-info {
+    text-align: center;
+    font-size: 15px;
+}
+
+.dfn-notes-body.consent .dbn-actions {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dfn-notes-body.consent .dbn-actions .dbn-btn {
+    padding: 6px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.dfn-notes-body.consent .dbn-actions .dbn-btn.cancel {
+    color: #666;
+    background: #eee;
+}
+
+.dfn-notes-body.consent .dbn-actions .dbn-btn.accept {
+    color: #ffffff;
+    background: #0073aa;
+}
+
+.dfn-notes-body.consent .dbn-actions .dbn-btn.delete {
+    color: #ffffff;
+    background: #e17055;
+}
+
+.dfn-notes-header {
+    background: #EEEEEE;
+    min-height: 35px;
+    display: flex;
+}
+
+.dfn-notes-header .dfn-notes-header-middle {
+    margin: 0px 10px;
+    flex-grow: 1;
+}
+
+.dfn-notes-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dfn-notes-header .dfn-notes-header-back {
+    padding-left: 6px;
+    cursor: pointer;
+    color: #999999;
+}
+
+.dfn-notes-header .dfn-notes-header-back:hover {
+    color: #0073AA;
+}
+
+.dfn-notes-header .dfn-notes-header-right {
+    padding-right: 10px;
+}
+
+.dfn-notes-btn {
+    min-height: 40px;
+    background-color: #0073AA;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dfn-notes-btn.dfn-disabled {
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.dfn-notes-btn:hover {
+    background-color: #0087c7;
+}
+
+.dfn-notes-empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #999999;
+    flex-direction: column;
+}
+
+.dfn-notes-empty .desc {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.dfn-notes-litem {
+    padding: 8px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed #ddd;
+    cursor: pointer;
+    color: #888888;
+}
+
+.dfn-notes-litem:hover {
+    background: #E7F5F9;
+}
+
+.dfn-notes-litem .dfn-avatar {
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.dfn-notes-litem .dfn-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.dfn-notes-litem .dfn-lright {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.dfn-notes-litem .dfn-lheader {
+    color: #0073AA;
+}
+
+.dfn-notes-litem .dfn-excerpt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dfn-notes-editor {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    border: none;
+    padding: 6px;
+}
+
+.dfn-notes-editor:active,
+.dfn-notes-editor:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+}
