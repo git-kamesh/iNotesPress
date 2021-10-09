@@ -2,6 +2,8 @@
 - A Noteworthy and the most beautiful note taking plugin for WordPress.
 - Notes for resources like Posts / Pages / Attachments / Woo Products.
 
+![iNotesPress Banner](assets/src/banner.png)
+
 ### Possible usecases which you might experience,
 - Add notes
 - Share what you and your team need to remember.
